@@ -4,7 +4,7 @@
 
 ### Working algorithms
 
-- [] Page Rank
+- [X] Page Rank
 - [] Non informed search
 - [] Informed search
 - [] Competitive Search
