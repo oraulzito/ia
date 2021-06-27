@@ -2,21 +2,18 @@ import math
 import sys
 
 
-# import numpy
-
 def page_rank(matrix, d=0.85, loop=1000):
     # get matrix length
     lenMatrix = int(math.sqrt(len(matrix)))
 
-    # put the values inside the matrix (easy way)
-    # mAux = numpy.array_split(matrix, lenMatrix)
-
-    # transform it
+    # transform the given input into an matrix
     loopMatrix = 0
     mAux = []
 
+    # remove line breakers
     matrix = matrix.replace('\n', '')
 
+    # create the matrix
     for r in range(lenMatrix):
         mAuxAux = []
         for c in range(lenMatrix):
@@ -44,21 +41,22 @@ def page_rank(matrix, d=0.85, loop=1000):
                     if c == '1':
                         votes += 1
 
-                # calc the new value
+                # calc the new value to the response
                 if mAux[index2][index] == '1':
                     pg[index] += pg[index2] / votes
 
                 index2 += 1
 
+            # calc the new value given the vote distribution and the constant D (balance)
             pg[index] = pg[index] * d + (1 - d)
             index += 1
         k += 1
 
+    # show the results
     for r in pg:
         print(round(r, 2))
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     a = sys.stdin.read()
     page_rank(a)
