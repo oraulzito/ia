@@ -1,8 +1,8 @@
 # Algorithms for IA
 
-## This is an repo to save my AI class tasks
+## This is a repo to save my AI class tasks
 
-### Working algorithms
+### TODO algorithms
 
 - [X] Page Rank
 - [ ] Non informed search
