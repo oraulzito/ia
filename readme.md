@@ -5,11 +5,11 @@
 ### Working algorithms
 
 - [X] Page Rank
-- [ ] Non informed search
-- [ ] Informed search
-- [ ] Competitive Search
-- [ ] Machine Learning and KNN
-- [ ] Naïve Bayes (Weka) 
-- [ ] Linear regression 
+- [X] Non informed search
+- [X] Informed search
+- [X] Competitive Search
+- [X] Machine Learning and KNN
+- [X] Naïve Bayes (Weka) 
+- [X] Linear regression 
 - [ ] Neural Networks (OCR)
 - [ ] K-Means
